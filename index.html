@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOMOV | Pilates & Barré Santander</title>
+    
+    <!-- Metaetiquetas SEO Básicas -->
+    <meta name="description" content="Descubre el balance perfecto de las clases de pilates, barré y entrenamiento funcional en Santander. Tu espacio exclusivo para cuidar cuerpo y mente con precisión técnica.">
+    <meta name="author" content="Lucia Jiangai Martínez Rivera">
+
+    <!-- Optimización para Redes Sociales (SMO) - Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studiomov.com/">
+    <meta property="og:title" content="STUDIOMOV | Pilates & Barré Santander">
+    <meta property="og:description" content="Descubre el balance perfecto de las clases de pilates, barré y entrenamiento funcional en Santander. Precisión en movimiento para tu bienestar.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://studiomov.com/">
+    <meta name="twitter:title" content="STUDIOMOV | Pilates & Barré Santander">
+    <meta name="twitter:description" content="Entrenamiento consciente en el centro de Santander. Pilates, Barré y Fuerza en un espacio elegante y minimalista.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Código JSON-LD para Optimización SEO y GEO (Schema.org) - Implementación Enriquecida -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HealthAndBeautyBusiness",
+          "name": "STUDIOMOV",
+          "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200",
+          "@id": "https://studiomov.com/#business",
+          "url": "https://studiomov.com/",
+          "telephone": "+34 000 000 000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "53 Calle Sta. Lucía",
+            "addressLocality": "Santander",
+            "addressRegion": "Cantabria",
+            "postalCode": "39003",
+            "addressCountry": "ES"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.4623,
+            "longitude": -3.8047
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "09:00",
+            "closes": "21:30"
+          }
+        },
+        {
+          "@type": "Article",
+          "headline": "Análisis del Método STUDIOMOV: Pilates, Barré y Fuerza en Santander",
+          "description": "Una comparativa técnica de las disciplinas de movimiento consciente y su impacto biomecánico en el cuerpo.",
+          "author": {
+            "@type": "Person",
+            "name": "Lucia Jiangai Martínez Rivera"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "STUDIOMOV",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://studiomov.com/logo.png"
+            }
+          },
+          "datePublished": "2026-03-02"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué diferencia al Pilates del Barré en STUDIOMOV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El Pilates se centra en la contracción excéntrica y el control del core, mientras que el Barré utiliza la isometría y micro-pulsos inspirados en el ballet para la fatiga muscular localizada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo funcionan los bonos de clases?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ofrecemos bonos de 5, 10 y 15 sesiones con caducidades que van desde los 2 hasta los 6 meses, permitiendo flexibilidad total para organizar tus entrenamientos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Es posible realizar una clase de prueba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, las clases de prueba tienen un coste de 10€ que se descuenta del primer bono o mensualidad si decides inscribirte en el centro."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 200; 
+            letter-spacing: -0.01em;
+            color: #1c1917;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4, .logo-text, .font-outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --pastel-pink: #fce7f3;
+            --accent-pink: #f9a8d4;
+            --highlight-pink: #f472b6;
+            --schedule-pill: #c5a58d;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: #1c1917;
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .logo-text {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 0.5em;
+            color: #1c1917;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .logo-text span {
+            font-weight: 100;
+            color: #a8a29e;
+        }
+        .logo-line {
+            width: 20px;
+            height: 1px;
+            background-color: #1c1917;
+            margin-top: 6px;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .logo-container:hover .logo-line {
+            width: 100%;
+            background-color: var(--highlight-pink);
+        }
+
+        .hero-logo .logo-text {
+            font-size: 1.8rem;
+            letter-spacing: 0.6em;
+        }
+        @media (min-width: 768px) {
+            .hero-logo .logo-text { font-size: 2.2rem; }
+        }
+        .hero-logo .logo-line {
+            width: 40px;
+            margin-top: 12px;
+        }
+        .hero-logo:hover .logo-line {
+            width: 150px;
+        }
+
+        .hamburger-icon {
+            width: 20px;
+            height: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .hamburger-line {
+            width: 100%;
+            height: 1px;
+            background-color: #1c1917;
+            transition: all 0.3s ease;
+        }
+
+        .side-menu-overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(28, 25, 23, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 80;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+        .side-menu-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #fdfdfc;
+            z-index: 90;
+            transform: translateX(100%);
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            padding: 100px 40px;
+        }
+        .side-menu.active {
+            transform: translateX(0);
+        }
+        .side-menu a {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 200;
+            font-size: 1.4rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            display: block;
+            width: fit-content;
+            transform-origin: left;
+        }
+        .side-menu a:hover {
+            color: var(--highlight-pink);
+            transform: scale(1.1);
+        }
+
+        .close-button svg {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+            will-change: transform;
+        }
+        .close-button:hover svg {
+            color: var(--highlight-pink);
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+        .heartbeat-hover {
+            transition: background-color 0.3s ease;
+            will-change: transform;
+        }
+        .heartbeat-hover:hover {
+            animation: latido 0.8s ease-in-out infinite;
+        }
+
+        .tab-active {
+            border-bottom: 2px solid var(--highlight-pink);
+            color: #1c1917;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            height: 300px;
+        }
+
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pan-on-scroll {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 1.5s ease-out, transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .pan-on-scroll.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .schedule-header-pill {
+            background: white;
+            border-radius: 9999px;
+            padding: 0.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            min-width: 100px;
+        }
+        .schedule-time-pill {
+            background: white;
+            border-radius: 9999px;
+            padding: 0.4rem 1rem;
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            width: 70px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .schedule-class-pill {
+            background: #c5a58d;
+            color: #1c1917;
+            border-radius: 9999px;
+            padding: 0.6rem 1.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            min-width: 100px;
+        }
+        .schedule-class-pill:hover {
+            background: var(--accent-pink);
+            transform: scale(1.02);
+        }
+        .schedule-divider {
+            height: 2px;
+            background: #1c1917;
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(28, 25, 23, 0.4);
+            backdrop-filter: blur(4px);
+            z-index: 200;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+        .modal-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 2rem;
+            max-width: 400px;
+            width: 90%;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .contact-input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #e7e5e4;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: #44403c;
+            background-color: transparent;
+            transition: border-color 0.3s ease;
+        }
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--accent-pink);
+        }
+        .contact-input::placeholder {
+            color: #a8a29e;
+            font-weight: 300;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 2 / 3;
+            border-radius: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 30px 60px -12px rgba(28, 25, 23, 0.2);
+            background: #fdfdfc;
+        }
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            height: 100%;
+        }
+        .carousel-slide img, .carousel-slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .carousel-btn:hover { background: white; scale: 1.1; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        .carousel-btn-prev { left: 1rem; }
+        .carousel-btn-next { right: 1rem; }
+        
+        .carousel-dots {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.6rem;
+            z-index: 10;
+        }
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .carousel-dot.active {
+            background: white;
+            width: 24px;
+            border-radius: 12px;
+        }
+
+        footer a {
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: var(--accent-pink);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- Modal de Horario -->
+    <div class="modal-overlay" id="scheduleModal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="w-12 h-px bg-pink-300 mx-auto mb-6"></div>
+            <h3 id="modalClassName" class="text-2xl font-light uppercase tracking-widest mb-4 font-outfit text-center text-stone-900">Clase</h3>
+            <div class="space-y-4 mb-8 text-center">
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1 font-inter font-bold">Instructor/a</p>
+                    <p id="modalInstructor" class="text-lg font-medium text-stone-800 font-inter">-</p>
+                </div>
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1 font-inter font-bold">Intensidad</p>
+                    <p id="modalIntensity" class="text-lg font-medium text-stone-800 font-inter">-</p>
+                </div>
+            </div>
+            <button onclick="closeModal()" class="text-[9px] uppercase tracking-widest font-bold text-pink-400 hover:text-stone-900 transition font-inter text-center">Cerrar detalle</button>
+        </div>
+    </div>
+
+    <!-- Navegación Off-canvas -->
+    <div class="side-menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <div class="side-menu" id="sideMenu">
+        <button id="closeMenuBtn" class="close-button absolute top-10 right-10 text-stone-400" onclick="toggleMenu()">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex flex-col mt-10">
+            <a href="#nos-conocemos" onclick="toggleMenu()" class="font-outfit">Nosotros</a>
+            <a href="#elegirnos" onclick="toggleMenu()" class="font-outfit">¿Por qué elegirnos?</a>
+            <a href="#metodo" onclick="toggleMenu()" class="font-outfit">Clases</a>
+            <a href="#precios" onclick="toggleMenu()" class="font-outfit">Precios</a>
+            <a href="#horario" onclick="toggleMenu()" class="font-outfit">Horario</a>
+            <a href="#escribenos" onclick="toggleMenu()" class="font-outfit">Contacto</a>
+        </div>
+        <div class="mt-auto pt-10 border-t border-stone-100 text-center">
+            <p class="text-[9px] uppercase tracking-[0.3em] text-stone-400 mb-2 font-medium font-inter">Santander, Cantabria</p>
+            <p class="text-[9px] uppercase tracking-[0.3em] text-pink-300 font-medium font-inter text-center">hola@studiomov.com</p>
+        </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20 text-center">
+            <div class="logo-container" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="logo-text text-xl font-medium tracking-[0.3em] font-outfit text-center">STUDIO<span>MOV</span></div>
+                <div class="logo-line"></div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line" style="width: 60%; align-self: flex-end;"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portada Principal -->
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden bg-stone-100">
+        <div id="heroImage" class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-20 will-change-transform scale-110"></div>
+        <div class="relative z-10 px-4 fade-in text-center">
+            <div class="logo-container hero-logo mb-10 text-center">
+                <div class="logo-text font-outfit text-center">STUDIO<span>MOV</span></div>
+                <div class="logo-line"></div>
+            </div>
+            <p class="text-stone-500 uppercase tracking-[0.6em] text-[10px] md:text-xs font-weight-light font-outfit text-center">
+                Pilates y Barré en <span class="text-pink-400 font-medium">Santander</span>, Cantabria
+            </p>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-30 text-center">
+            <div class="w-px h-12 bg-pink-300 mx-auto text-center"></div>
+        </div>
+    </section>
+
+    <!-- Sección: ¿Nos conocemos? -->
+    <section id="nos-conocemos" class="pt-20 pb-32 bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_1.4fr_1fr] gap-12 lg:gap-16 items-start">
+                
+                <!-- Bloque Izquierdo -->
+                <div class="space-y-8 flex flex-col items-start text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl section-title text-left">¿Nos conocemos?</h2>
+                    <p class="text-stone-500 font-light leading-relaxed text-sm md:text-base font-inter text-left">
+                        Hemos diseñado el centro para acercar tanto el pilates suelo, como las disciplinas de barré, una práctica sincronizada con música que combina fluidez, fuerza y equilibrio, y el entrenamiento de fuerza funcional.
+                    </p>
+                    <div class="pt-2 w-full sm:w-auto">
+                        <a href="#contacto-form" class="heartbeat-hover block px-10 py-4 bg-stone-900 text-white text-center rounded-full text-[10px] font-medium uppercase tracking-[0.3em] hover:bg-pink-400 transition shadow-sm font-inter">
+                            ¡Prueba con nosotros!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bloque Central -->
+                <div class="flex justify-center pt-2 md:pt-4">
+                    <div class="relative w-full max-w-[480px] aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl ring-1 ring-stone-50 transition-transform duration-500 hover:scale-[1.01]">
+                        <img src="side-view-women-doing-pilates-together.jpg" alt="[Mujeres practicando pilates en Studio Mov]" class="img-reveal w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Bloque Derecho (Texto desplazado un poco hacia abajo como se pidió) -->
+                <div class="pt-12 md:pt-28 text-left">
+                    <div class="border-l border-pink-100 pl-8 md:pl-10 py-2">
+                        <p class="text-stone-700 font-semibold leading-relaxed text-base md:text-lg font-inter text-left">
+                            Descubre el balance perfecto de las clases de pilates, barré y entrenamiento funcional. 
+                            <span class="block mt-6 text-stone-400 font-light italic text-left">¡Te damos la bienvenida a tu nuevo espacio para cuerpo y mente!</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Sobre nosotros -->
+    <section id="sobre-nosotros" class="py-32 bg-white border-t border-stone-100 text-center">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center text-left">
+            <div class="flex justify-center text-center">
+                <div class="carousel-container ring-1 ring-stone-100 shadow-xl text-center">
+                    <div class="carousel-track text-center" id="carouselTrack">
+                        <div class="carousel-slide"><img src="people-taking-pilates-reformer-class.jpg" alt="[Clase de Pilates]"></div>
+                        <div class="carousel-slide"><img src="side-view-women-doing-pilates-together.jpg" alt="[Práctica de Pilates]"></div>
+                        <div class="carousel-slide"><img src="women doing barré.png" alt="[Práctica de Barré]"></div>
+                        <div class="carousel-slide"><img src="women-doing-pilates-reformer (1).jpg" alt="[Pilates Reformer]"></div>
+                    </div>
+                    <button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)"><svg class="w-5 h-5 text-stone-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
+                    <button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)"><svg class="w-5 h-5 text-stone-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                    <div class="carousel-dots" id="carouselDots">
+                        <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+                        <div class="carousel-dot" onclick="goToSlide(1)"></div>
+                        <div class="carousel-dot" onclick="goToSlide(2)"></div>
+                        <div class="carousel-dot" onclick="goToSlide(3)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-10 text-left">
+                <h2 class="text-4xl md:text-5xl section-title text-center md:text-left">Sobre nosotros</h2>
+                <div class="space-y-6 text-stone-500 font-weight-light leading-relaxed text-sm md:text-base font-inter max-w-md mx-auto md:mx-0">
+                    <p>En <span class="text-stone-900 font-semibold font-outfit text-center md:text-left">Studio Mov</span> creemos en el pilates como la base para transformar el cuerpo, conectar la mente y descubrir el equilibrio que todos necesitamos en nuestra vida.</p>
+                    <p>Nuestro centro está diseñado para acercar el pilates suelo y con máquinas, combinándolo con disciplinas complementarias como el barré, una práctica sincronizada con música que combina fluidez, fuerza y equilibrio, y el entrenamiento funcional, ideal para potenciar tu cuerpo de manera integral.</p>
+                    <p>Studio Mov es mucho más que un estudio; es un espacio para cuidar cuerpo y mente, un lugar donde puedes crecer y sentirte bien desde la primera sesión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: ¿Por qué elegirnos? -->
+    <section id="elegirnos" class="py-32 bg-stone-50 border-t border-stone-100 text-center">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="mb-20 max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl section-title mb-8">¿Por qué elegirnos?</h2>
+                <div class="w-20 h-px bg-pink-300 mx-auto mb-10 text-center"></div>
+                <p class="text-stone-500 font-light leading-relaxed text-base md:text-lg font-inter text-center text-center">
+                    En <span class="text-stone-900 font-semibold font-outfit text-center text-center">Studio Mov</span>, tu bienestar es nuestra prioridad. Ofrecemos un espacio acogedor y totalmente equipado donde personalizamos cada ejercicio para ayudarte a alcanzar tus metas de forma segura y profesional.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <h3 class="text-xl font-light text-stone-900 uppercase tracking-widest mb-6 font-outfit group-hover:text-pink-400 transition-colors text-left text-left">Grupos reducidos</h3>
+                    <p class="text-sm text-stone-500 leading-relaxed font-inter font-light text-left text-left text-left">Ofrecemos sesiones con aforo limitado para garantizar una atención 100% personalizada. Nos centramos en el desarrollo de tu fuerza muscular, la mejora de la movilidad articular y la coordinación motora, siempre bajo una supervisión técnica rigurosa que asegura la efectividad de cada ejercicio realizado.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group text-left">
+                    <h3 class="text-xl font-light text-stone-900 uppercase tracking-widest mb-6 font-outfit group-hover:text-pink-400 transition-colors text-left text-left text-left">Nuestro propósito</h3>
+                    <p class="text-sm text-stone-500 leading-relaxed font-inter font-light text-left text-left text-left">Nuestra misión es acompañarte en un viaje de transformación física, desde la recuperación de la consciencia postural hasta alcanzar una capacidad funcional plena. Lo hacemos en un entorno motivador, elegante y acogedor que invita a la concentración y al crecimiento personal constante en cada sesión.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-stone-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group text-left">
+                    <h3 class="text-xl font-light text-stone-900 uppercase tracking-widest mb-6 font-outfit group-hover:text-pink-400 transition-colors text-left text-left text-left">Descubre Studio Mov</h3>
+                    <p class="text-sm text-stone-500 leading-relaxed font-inter font-light text-left text-left text-left text-left">Entendemos el movimiento consciente como la herramienta más poderosa para transformar no solo tu cuerpo, sino tu bienestar emocional general. En nuestro estudio de Santander, cada clase es una oportunidad para reconectar contigo mismo y descubrir el potencial ilimitado de tu salud física.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartado Clases -->
+    <section id="metodo" class="py-32 bg-white border-t border-stone-100 text-center">
+        <div class="max-w-6xl mx-auto px-8 text-center">
+            <h2 class="text-4xl md:text-5xl section-title mb-6 text-center">Clases</h2>
+            <div class="w-20 h-px bg-pink-300 mx-auto mb-8 text-center"></div>
+            <p class="text-stone-400 max-w-2xl mx-auto font-weight-light text-sm leading-relaxed font-inter text-center text-center">Nuestro enfoque se basa en la técnica pura. Analizamos la biomecánica detrás de cada disciplina para ofrecerte el entrenamiento más eficiente y seguro.</p>
+            <div class="flex justify-center mt-12 mb-12 space-x-16 text-center text-center">
+                <button onclick="switchTab('pilates')" id="btn-pilates" class="pb-3 uppercase tracking-[0.4em] text-[10px] tab-active transition font-outfit text-center">Pilates</button>
+                <button onclick="switchTab('barre')" id="btn-barre" class="pb-3 uppercase tracking-[0.4em] text-[10px] text-stone-300 hover:text-pink-300 transition font-outfit text-center">Barré</button>
+            </div>
+            <div id="content-display" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16 text-left">
+                <div class="space-y-12 text-left" id="text-specs">
+                    <div class="fade-in text-left">
+                        <h3 class="text-2xl font-light mb-10 text-stone-900 tracking-tight uppercase font-outfit text-left" id="spec-title">Pilates: Control y Alargamiento</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+                            <div class="border-l border-pink-100 pl-6 text-left">
+                                <h4 class="font-medium text-[9px] uppercase tracking-widest text-pink-400 mb-3 font-outfit font-bold text-left">Enfoque Principal</h4>
+                                <p id="spec-focus" class="text-xs text-stone-500 leading-relaxed font-inter text-left">Estabilización del núcleo profundo (Core) y alineación postural mediante control neuromotor.</p>
+                            </div>
+                            <div class="border-l border-pink-100 pl-6 text-left">
+                                <h4 class="font-medium text-[9px] uppercase tracking-widest text-pink-400 mb-3 font-outfit font-bold text-left">Tipo de Contracción</h4>
+                                <p id="spec-contraction" class="text-xs text-stone-500 leading-relaxed font-inter text-left">Énfasis en la contracción excéntrica: fortalecer el músculo mientras se alarga bajo tensión.</p>
+                            </div>
+                            <div class="border-l border-pink-100 pl-6 text-left">
+                                <h4 class="font-medium text-[9px] uppercase tracking-widest text-pink-400 mb-3 font-outfit font-bold text-left">Impacto Articular</h4>
+                                <p id="spec-impact" class="text-xs text-stone-500 leading-relaxed font-inter text-left text-left">Impacto nulo. Es la disciplina de referencia para la salud de la columna y la rehabilitación.</p>
+                            </div>
+                            <div class="border-l border-pink-100 pl-6 text-left text-left">
+                                <h4 class="font-medium text-[9px] uppercase tracking-widest text-pink-400 mb-3 font-outfit font-bold text-left">Base Técnica</h4>
+                                <p id="spec-base" class="text-xs text-stone-500 leading-relaxed font-inter text-left">Utilización de muelles (Reformer) para crear asistencia y resistencia, buscando la fluidez total.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 md:p-12 rounded-[3rem] border border-stone-100 shadow-sm text-center">
+                    <h3 class="text-center text-[9px] uppercase tracking-[0.4em] mb-10 text-pink-300 font-medium font-outfit text-center">Comparativa de Atributos</h3>
+                    <div class="chart-container text-center"><canvas id="barComparisonChart"></canvas></div>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center space-y-12 pt-16 border-t border-stone-200 text-center text-center text-center">
+                <p class="text-stone-500 font-weight-light leading-relaxed text-lg md:text-xl text-center font-inter text-center">Descubre que es posible ponerse en forma<br>y divertirse al ritmo de la música mediante<br>la fusión entre Ballet, Pilates y Fitness.</p>
+                <div class="flex justify-center text-center">
+                    <a href="#contacto-form" class="heartbeat-hover px-16 py-4 bg-stone-900 text-white rounded-full text-[10px] font-medium uppercase tracking-[0.4em] hover:bg-pink-400 transition shadow-lg font-inter text-center text-center">¿Te animas?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Precios -->
+    <section id="precios" class="pt-32 pb-16 bg-stone-50 border-t border-stone-100 text-center">
+        <div class="max-w-7xl mx-auto px-8 text-center text-center">
+            <div class="text-center mb-20 max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl section-title mb-8 text-center">Nuestros precios</h2>
+                <div class="w-20 h-px bg-pink-300 mx-auto mb-10 text-center"></div>
+                <p class="text-stone-500 font-light leading-relaxed text-base md:text-lg mb-4 font-inter text-center">
+                    En <span class="text-stone-900 font-semibold font-outfit text-center">Studio Mov</span> no tenemos cuota de apertura ni por nuevas altas. Queremos que tengas libertad para organizar tu entrenamiento.
+                </p>
+                <p class="text-stone-400 font-light text-sm italic font-inter text-center text-center">
+                    Con tu bono puedes elegir cuándo venir y distribuir tus sesiones. Si prefieres un día fijo a la semana, opta por la mensualidad.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch text-center">
+                <div class="bg-white rounded-[3rem] p-12 shadow-sm border border-stone-100 flex flex-col hover:shadow-md transition-all text-center">
+                    <h3 class="text-3xl font-light text-stone-900 uppercase tracking-widest mb-8 text-center font-outfit text-center text-center text-center">Mensualidad</h3>
+                    <div class="space-y-6 flex-grow text-left">
+                        <div class="border-l border-pink-100 pl-6 py-2 text-left">
+                            <h4 class="text-[10px] uppercase tracking-widest text-pink-400 font-medium mb-1 font-outfit text-left">Horario Fijo</h4>
+                            <p class="text-sm text-stone-600 font-inter font-light leading-relaxed text-left">Elige tu horario fijo entre todas nuestras actividades.</p>
+                        </div>
+                        <div class="border-l border-pink-100 pl-6 py-2 text-left text-left">
+                            <h4 class="text-[10px] uppercase tracking-widest text-pink-400 font-medium mb-1 font-outfit text-left">Flexibilidad</h4>
+                            <p class="text-sm text-stone-600 font-inter font-light leading-relaxed text-left">Un cambio de hora puntual al mes. Priorizamos la estabilidad de los horarios.</p>
+                        </div>
+                        <div class="border-l border-pink-100 pl-6 py-2 text-left text-left">
+                            <h4 class="text-[10px] uppercase tracking-widest text-pink-400 font-medium mb-1 font-outfit text-left">Sin Permanencia</h4>
+                            <p class="text-sm text-stone-600 font-inter font-light text-left text-left">Libertad total para gestionar tu suscripción.</p>
+                        </div>
+                    </div>
+                    <div class="mt-12 text-center pt-8 border-t border-stone-50 text-center text-center">
+                        <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-2 font-inter font-medium text-center text-center text-center">1 sesión por semana</span>
+                        <div class="flex items-baseline justify-center gap-1 text-center text-center">
+                            <span class="text-5xl font-light text-stone-900 font-outfit text-center">35€</span>
+                            <span class="text-stone-400 text-sm font-inter text-center text-center">/mes</span>
+                        </div>
+                        <p class="mt-4 text-[10px] text-stone-400 font-inter font-light italic text-center text-center text-center">Incluye 1 única sesión semanal el mes en curso</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[3rem] p-12 shadow-sm border border-stone-100 flex flex-col hover:shadow-md transition-all text-center text-center text-center">
+                    <h3 class="text-3xl font-light text-stone-900 uppercase tracking-widest mb-8 text-center font-outfit text-center text-center text-center">Bonos</h3>
+                    <div class="space-y-6 mb-12 text-center text-center text-center">
+                        <p class="text-sm text-stone-500 font-inter font-light leading-relaxed text-center text-center">Cambia cada semana o día de horarios. Elige entre todas nuestras actividades disponibles.</p>
+                    </div>
+                    <div class="space-y-6 flex-grow text-center text-center text-center">
+                        <div class="flex justify-between items-center border-b border-stone-50 pb-4 group cursor-pointer text-center text-center">
+                            <div class="text-left text-left">
+                                <h4 class="text-lg text-stone-900 font-outfit uppercase tracking-wide group-hover:text-pink-400 transition-colors duration-300 text-left">Bono 5</h4>
+                                <p class="text-[10px] text-stone-400 tracking-wider font-inter group-hover:text-pink-400 transition-colors duration-300 text-left">Caducidad 2 meses</p>
+                            </div>
+                            <span class="text-3xl font-light text-stone-900 font-outfit group-hover:text-pink-400 transition-colors duration-300 text-center">43€</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-50 pb-4 group cursor-pointer text-center text-center">
+                            <div class="text-left text-left">
+                                <h4 class="text-lg text-stone-900 font-outfit uppercase tracking-wide group-hover:text-pink-400 transition-colors duration-300 text-left">Bono 10</h4>
+                                <p class="text-[10px] text-stone-400 tracking-wider font-inter group-hover:text-pink-400 transition-colors duration-300 text-left text-left">Caducidad 4 meses</p>
+                            </div>
+                            <span class="text-3xl font-light text-stone-900 font-outfit group-hover:text-pink-400 transition-colors duration-300 text-center">80€</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-50 pb-4 group cursor-pointer text-center text-center">
+                            <div class="text-left text-left text-left">
+                                <h4 class="text-lg text-stone-900 font-outfit uppercase tracking-wide text-stone-900 group-hover:text-pink-400 transition-colors text-left text-left">Bono 15</h4>
+                                <p class="text-[10px] text-stone-400 tracking-wider font-inter group-hover:text-pink-400 transition-colors duration-300 text-left">Caducidad 6 meses</p>
+                            </div>
+                            <span class="text-3xl font-light text-stone-900 font-outfit group-hover:text-pink-400 transition-colors duration-300 text-center">112€</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-2 group cursor-pointer text-center text-center">
+                            <div class="text-left text-left">
+                                <h4 class="text-lg text-stone-900 font-outfit uppercase tracking-wide group-hover:text-pink-400 transition-colors duration-300 text-left">Clase suelta</h4>
+                            </div>
+                            <span class="text-3xl font-light text-stone-900 font-outfit group-hover:text-pink-400 transition-colors duration-300 text-center">10€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-2xl mx-auto p-10 rounded-[2.5rem] bg-pink-50/50 border border-pink-100 text-center text-center text-center">
+                <h4 class="text-[10px] uppercase tracking-[0.3em] text-pink-400 font-bold mb-4 font-outfit text-center">Solicita tu clase prueba</h4>
+                <p class="text-xs text-stone-500 font-inter leading-relaxed font-light italic max-w-md mx-auto mb-8 text-center text-center">
+                    <span class="font-bold text-stone-900 uppercase text-center text-center">Importante:</span> Las clases de prueba tienen un coste de 10 €. Si decides apuntarte al centro, ya sea con bono o mensualidad, ese importe se descontará de tu bono como la primera sesión del mismo.
+                </p>
+                <div class="flex justify-center text-center">
+                    <a href="#contacto-form" class="heartbeat-hover px-12 py-4 bg-stone-900 text-white rounded-full text-[10px] font-medium uppercase tracking-[0.4em] hover:bg-pink-400 transition shadow-lg font-inter text-center">
+                        Reservar clase
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Horario -->
+    <section id="horario" class="pt-16 pb-32 bg-stone-100/30 text-center text-center">
+        <div class="max-w-5xl mx-auto px-8 text-center text-center text-center">
+            <div class="text-center mb-16 text-center text-center">
+                <h2 class="text-4xl md:text-5xl section-title text-center mb-4 text-center">Horario 2026</h2>
+                <div class="w-20 h-px bg-pink-300 mx-auto text-center text-center"></div>
+            </div>
+            <div class="overflow-x-auto pb-4">
+                <div class="grid grid-cols-5 gap-4 items-center min-w-[600px]">
+                    <div></div>
+                    <div class="schedule-header-pill font-outfit text-center">Lunes</div>
+                    <div class="schedule-header-pill font-outfit text-center">Martes</div>
+                    <div class="schedule-header-pill font-outfit text-center text-center">Miércoles</div>
+                    <div class="schedule-header-pill font-outfit text-center">Jueves</div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center">10:00</div></div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center">Fuerza</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Fuerza</div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center">11:00</div></div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Pilates</div>
+                    <div class="col-span-5 text-center"><div class="schedule-divider text-center text-center"></div></div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center text-center text-center">16:30</div></div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center">Pilates</div>
+                    <div class="w-full text-center text-center text-center"></div> 
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Pilates</div>
+                    <div class="w-full text-center text-center text-center text-center text-center"></div> 
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">17:30</div></div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Pilates</div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">18:30</div></div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center">Fuerza</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Fuerza</div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">19:30</div></div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Fuerza</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Fuerza</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Barré</div>
+                    <div class="flex justify-end pr-4 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center"><div class="schedule-time-pill font-inter text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">20:30</div></div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Barré', 'Lucía', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center">Barré</div>
+                    <div onclick="openScheduleInfo('Pilates', 'Ana', 'Media')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Pilates</div>
+                    <div onclick="openScheduleInfo('Fuerza', 'Marta', 'Alta')" class="schedule-class-pill font-inter text-center text-center text-center text-center text-center">Fuerza</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Escríbenos -->
+    <section id="escribenos" class="py-32 bg-white text-center text-center text-center text-center">
+        <div class="max-w-4xl mx-auto px-8 text-center text-center">
+            <h2 class="text-4xl md:text-5xl section-title text-center mb-20 text-center text-center text-center text-center">Escríbenos</h2>
+            <form id="contacto-form" class="space-y-6 max-w-2xl mx-auto text-left text-left text-left text-left">
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-inter font-bold text-left text-left">Nombre</label>
+                    <input type="text" placeholder="Tu nombre completo" class="contact-input font-inter text-left text-left">
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-inter font-bold text-left text-left text-left">Email</label>
+                    <input type="email" placeholder="ejemplo@correo.com" class="contact-input font-inter text-left text-left">
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-inter font-bold text-left text-left text-left text-left">Mensaje</label>
+                    <textarea placeholder="Cuéntanos tus dudas u objetivos..." rows="5" class="contact-input font-inter text-left text-left"></textarea>
+                </div>
+                <div class="flex items-center gap-3 pt-2 text-left">
+                    <input type="checkbox" id="privacy" class="w-4 h-4 accent-stone-900 border-stone-300 rounded focus:ring-stone-900 cursor-pointer text-left">
+                    <label for="privacy" class="text-sm text-stone-500 font-light cursor-pointer font-inter text-left text-left">He leído y acepto la Política de Privacidad</label>
+                </div>
+                <div class="pt-6 text-center text-center text-center">
+                    <button type="button" class="heartbeat-hover w-full py-5 bg-black text-white text-xs font-bold uppercase tracking-[0.4em] rounded-full hover:bg-stone-800 transition shadow-lg font-inter text-center text-center">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Cierre -->
+    <section id="cierre-final" class="py-32 bg-stone-50 border-t border-stone-100 overflow-hidden text-center text-center">
+        <div class="max-w-7xl mx-auto px-8 text-left text-left text-left">
+            <div class="max-w-3xl text-left pan-on-scroll text-left">
+                <div class="w-12 h-px bg-pink-300 mb-12 text-left text-left"></div>
+                <p class="text-3xl md:text-5xl font-light text-stone-900 leading-[1.15] mb-12 font-outfit tracking-tight text-left text-left">En el espacio <span class="font-medium font-outfit text-left">Studio Mov</span> puedes desconectar de la rutina, ejercitando cuerpo y mente.</p>
+                <div class="space-y-4 text-left">
+                    <p class="text-xl md:text-2xl font-light uppercase tracking-[0.4em] text-stone-900 font-outfit text-left text-left text-left">¡Nos vemos pronto!</p>
+                    <p class="text-lg md:text-xl font-light text-stone-500 italic leading-relaxed font-inter text-left text-left text-left">Prueba una clase y descubrirás una forma diferente de moverte y sentirte bien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer class="bg-black text-white py-24 px-8 border-t border-white/5 text-center text-center text-center">
+        <div class="max-w-7xl mx-auto text-left text-left text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24 items-start text-left text-left">
+                
+                <div class="space-y-8 flex flex-col items-center md:items-start text-center md:text-left text-center">
+                    <div class="logo-container group text-center md:text-left text-center text-center text-center text-center text-center text-center text-center text-center"> 
+                        <div class="flex flex-col items-center md:items-start uppercase tracking-[0.4em] text-white text-base font-outfit text-center">
+                            <div class="flex items-center text-center text-center">
+                                <span>STUDIO</span>
+                                <span class="font-thin opacity-50 ml-1 text-center">MOV</span>
+                            </div>
+                            <div class="logo-line bg-pink-400 !mt-2 w-full text-center"></div>
+                        </div>
+                        <div class="text-[9px] uppercase tracking-[0.5em] text-stone-500 font-light font-inter mt-3 text-center md:text-left text-center text-center text-center">BARRE Y PILATES</div>
+                    </div>
+                    <p class="text-stone-400 text-xs font-light leading-relaxed max-w-[260px] font-inter italic border-l border-pink-400/30 pl-4 text-left">"La excelencia del movimiento consciente al servicio de tu bienestar."</p>
+                </div>
+
+                <div class="space-y-6 text-center md:text-left text-center text-center">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold font-outfit text-left text-left">Dirección</h4>
+                    <div class="text-stone-300 text-sm font-light space-y-2 font-inter text-left text-left">
+                        <p class="text-left text-left">53 Calle Sta. Lucía</p>
+                        <p class="text-left text-left">Santander, Cantabria</p>
+                        <p class="text-left text-left">España</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-center md:text-left text-center">
+                    <h4 class="text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold font-outfit text-left text-left">Studio</h4>
+                    <div class="text-stone-300 text-sm font-light space-y-4 font-inter text-center md:text-left text-left">
+                        <div class="text-center md:text-left text-left">
+                            <p class="text-[10px] text-pink-400 mb-1 font-medium text-center md:text-left text-left">LUNES - JUEVES</p>
+                            <p class="text-center md:text-left text-left text-left">09:00 - 12:00 / 16:30 - 21:30</p>
+                        </div>
+                        <p class="hover:text-pink-300 transition text-left text-left">info@studiomov.com</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8 flex flex-col items-center md:items-start text-center md:text-left text-center text-center text-center text-center text-center text-center text-center">
+                    <div class="text-center md:text-left text-center text-center text-center">
+                        <h4 class="text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold font-outfit mb-4 text-center">Síguenos</h4>
+                        <a href="https://www.instagram.com/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition inline-flex text-center text-center">
+                            <svg class="w-5 h-5 text-center text-center text-center" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                    <div class="text-center md:text-left text-center text-center text-center text-center">
+                        <h4 class="text-[10px] uppercase tracking-[0.4em] text-stone-500 font-bold font-outfit mb-2 text-center md:text-left text-center text-center">Autoría</h4>
+                        <p class="text-stone-300 text-[11px] font-light font-inter text-center md:text-left text-center text-center text-center">realizado por Lucia Jiangai Martínez Rivera</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENLACES LEGALES VERTICALES -->
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center md:items-end gap-12 text-[10px] uppercase tracking-[0.25em] text-stone-500 font-inter text-center">
+                <div class="text-center md:text-left w-full md:w-auto text-center text-center text-center">Copyright &copy; 2026 STUDIOMOV. Todos los derechos reservados.</div>
+                
+                <div class="flex flex-col items-center md:items-end gap-3 text-[9px] uppercase tracking-[0.2em] font-inter text-center">
+                    <a href="#" class="hover:text-white transition text-center text-center">Aviso legal</a>
+                    <a href="#" class="hover:text-white transition text-center">Privacidad</a>
+                    <a href="#" class="hover:text-white transition text-center text-center">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let barChart;
+        let currentSlide = 0;
+        let rotationDegree = 0;
+        const totalSlides = 4;
+
+        function toggleMenu() {
+            const menu = document.getElementById('sideMenu');
+            const overlay = document.getElementById('menuOverlay');
+            const closeIcon = document.querySelector('#closeMenuBtn svg');
+            rotationDegree += 180;
+            closeIcon.style.transform = `rotate(${rotationDegree}deg)`;
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function initParallax() {
+            const heroImage = document.getElementById('heroImage');
+            window.addEventListener('scroll', () => {
+                const scrollValue = window.scrollY;
+                if (heroImage) {
+                    heroImage.style.transform = `translateY(${scrollValue * 0.3}px)`;
+                }
+            });
+        }
+
+        function switchTab(type) {
+            document.getElementById('btn-pilates').className = (type === 'pilates' ? 'pb-3 uppercase tracking-[0.4em] text-[10px] tab-active transition font-outfit text-center' : 'pb-3 uppercase tracking-[0.4em] text-[10px] text-stone-300 hover:text-pink-300 transition font-outfit text-center');
+            document.getElementById('btn-barre').className = (type === 'barre' ? 'pb-3 uppercase tracking-[0.4em] text-[10px] tab-active transition font-outfit text-center' : 'pb-3 uppercase tracking-[0.4em] text-[10px] text-stone-300 hover:text-pink-300 transition font-outfit text-center');
+            
+            const animatedContainer = document.querySelector('#text-specs > div');
+            if (animatedContainer) {
+                animatedContainer.classList.remove('fade-in');
+                void animatedContainer.offsetWidth; 
+                animatedContainer.classList.add('fade-in');
+            }
+
+            const title = document.getElementById('spec-title');
+            const focus = document.getElementById('spec-focus');
+            const contraction = document.getElementById('spec-contraction');
+            const impact = document.getElementById('spec-impact');
+            const base = document.getElementById('spec-base');
+
+            if (type === 'pilates') {
+                title.innerText = 'Pilates: Control y Alargamiento';
+                focus.innerText = 'Estabilización del núcleo profundo (Core) y alineación postural mediante control neuromotor.';
+                contraction.innerText = 'Énfasis en la contracción excéntrica: fortalecer el músculo mientras se alarga bajo tensión.';
+                impact.innerText = 'Impacto nulo. Es la disciplina de referencia para la salud de la columna y la rehabilitación.';
+                base.innerText = 'Utilización de muelles (Reformer) para crear asistencia y resistencia, buscando la fluidez total.';
+            } else {
+                title.innerText = 'Barré: Resistencia e Intensidad';
+                focus.innerText = 'Fatiga muscular localizada, esculpido de extremidades y mejora de la resistencia muscular.';
+                contraction.innerText = 'Combinación de contracción isométrica (sostener) con pulsos isotónicos de rango corto.';
+                impact.innerText = 'Bajo impacto articular, pero con una alta intensidad muscular y desafío cardiovascular.';
+                base.innerText = 'Fusión de ballet, yoga y pilates utilizando la barra como punto de equilibrio estable.';
+            }
+            updateHighlight(type);
+        }
+
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const dots = document.querySelectorAll('.carousel-dot');
+            if(track) track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => dot.classList.toggle('active', index === currentSlide));
+        }
+
+        function moveCarousel(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        function openScheduleInfo(className, instructor, intensity) {
+            const modal = document.getElementById('scheduleModal');
+            document.getElementById('modalClassName').innerText = className;
+            document.getElementById('modalInstructor').innerText = instructor;
+            document.getElementById('modalIntensity').innerText = intensity;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('scheduleModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function initChart() {
+            const ctx = document.getElementById('barComparisonChart').getContext('2d');
+            const statsData = { pilates: [10, 9, 10, 4, 10], barre: [7, 6, 8, 10, 6] };
+            barChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Core', 'Flexibilidad', 'Postura', 'Fatiga Muscular', 'Control'],
+                    datasets: [
+                        { label: 'Pilates', data: statsData.pilates, backgroundColor: '#1c1917', borderRadius: 4, barThickness: 10 },
+                        { label: 'Barré', data: statsData.barre, backgroundColor: '#f9a8d4', borderRadius: 4, barThickness: 10 }
+                    ]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { beginAtZero: true, max: 10, grid: { display: false }, ticks: { display: false } },
+                        y: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 10, weight: '300' }, color: '#a8a29e' } }
+                    },
+                    plugins: {
+                        legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 20, font: { family: 'Inter', size: 10, weight: '300' } } },
+                        tooltip: { backgroundColor: 'rgba(28, 25, 23, 0.9)', titleFont: { family: 'Inter', size: 11 }, bodyFont: { family: 'Inter', size: 11 }, cornerRadius: 8 }
+                    }
+                }
+            });
+        }
+
+        function updateHighlight(type) {
+            if (!barChart) return;
+            barChart.data.datasets[0].backgroundColor = (type === 'pilates') ? '#1c1917' : 'rgba(28, 25, 23, 0.2)';
+            barChart.data.datasets[1].backgroundColor = (type === 'barre') ? '#f9a8d4' : 'rgba(249, 168, 212, 0.2)';
+            barChart.update();
+        }
+
+        function initPanEffect() {
+            const observerOptions = { threshold: 0.2 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-active'); });
+            }, { threshold: 0.2 });
+            const target = document.querySelector('.pan-on-scroll');
+            if (target) observer.observe(target);
+        }
+
+        window.onload = () => {
+            initChart();
+            initPanEffect();
+            initParallax();
+            setInterval(() => moveCarousel(1), 5000);
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === "#") return;
+                    const el = document.querySelector(targetId);
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        };
+    </script>
+</body>
+</html>
